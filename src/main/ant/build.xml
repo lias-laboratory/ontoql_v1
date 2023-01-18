@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="antlrGenerate" default="regenAntlrProject" basedir=".">
+	<!-- ############################# VARIABLES ##############################-->
+	
+	<!-- set global properties for this build -->
+	<property name="src.dir" value="src" />
+	<property name="grammar.dir" value="${src.dir}/main/antlr" />
+	<property name="lib.dir" value="lib" />
+	<property name="parser.project" value="${src.dir}/main/java/fr/ensma/lisi/ontoql/engine/antlr" />
+
+	<!-- ############################# Tasks ##############################-->
+	<taskdef name="antlrtask" classname="org.apache.tools.ant.taskdefs.optional.ANTLR">
+		<classpath>
+			<pathelement path="${compile_classpath}"/> 
+		</classpath>
+	</taskdef>
+
+	<!-- ############################ Targets #############################-->
+	<target name="antlrProject">
+		<!-- The OntoQL grammar -->
+		<antlrtask target="${grammar.dir}/OntoQL-syntaxique.g" outputdirectory="${parser.project}" />
+		<!-- The OntoQL tree transform grammar -->
+		<antlrtask target="${grammar.dir}/OntoQL-semantique.g" outputdirectory="${parser.project}" />
+		<!-- SQL generation -->
+		<antlrtask target="${grammar.dir}/OntoQL-generation.g" outputdirectory="${parser.project}" />
+		<!-- The SPARQL grammar -->
+		<antlrtask target="${grammar.dir}/SPARQL-syntaxique.g" outputdirectory="${parser.project}" />
+		<!-- Translation from SPARQL to OntoQL -->
+		<antlrtask target="${grammar.dir}/SPARQL-to-OntoQL.g" outputdirectory="${parser.project}" />
+	</target>
+	
+	<target name="regenAntlrProject" depends="deleteAntlrProject, antlrProject" />
+		
+	<target name="deleteAntlrProject">
+		<delete>
+			<fileset dir="${parser.project}" />
+		</delete>
+	</target>
+</project>
