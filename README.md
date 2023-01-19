@@ -209,7 +209,7 @@ We suppose that OntoDBSchema V1 is correctly installed. If not, please refer to 
 $ mvn clean install
 ```
 
-* Create a new maven project and add a dependency on OntoQL
+* Create a new maven project and add a dependency to the OntoQL artifact. 
 
 ```
 <groupId>fr.ensma.lisi</groupId>
