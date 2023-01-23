@@ -263,7 +263,7 @@ Details the license agreement of OntoQL V1: [LICENCE](LICENCE)
 * Lines of Code: 44 122
 * Programming Languages: Java, XML
 
-## Historic Contributors
+## Historic Contributors (core developers first followed by alphabetical order)
 
 * [Stéphane JEAN(core developer)](https://www.lias-lab.fr/members/stephanejean/)
 * [Yamine AIT-AMEUR](https://www.lias-lab.fr/members/yamineaitameur/)
