@@ -256,7 +256,7 @@ public class OntoQLSampleTest {
 
 ## Software licence agreement
 
-Details the license agreement of OntoQL V1: [LICENCE](LICENCE)
+Details the license agreement of OntoQL V1: [LICENSE](LICENSE)
 
 ## Code analysis
 
@@ -275,4 +275,4 @@ Details the license agreement of OntoQL V1: [LICENCE](LICENCE)
 * Laura MASTELLA
 * [Guy PIERRA](https://www.lias-lab.fr/members/guypierra/)
 * [Kevin ROYER](https://www.lias-lab.fr/members/kevinroyer/)
-* [Dilek TAPUCU](https://www.lias-lab.fr/fr/members/dilektapucu/)
+* [Dilek TAPUCU](https://www.lias-lab.fr/members/dilektapucu/)
