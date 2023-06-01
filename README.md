@@ -254,7 +254,7 @@ public class OntoQLSampleTest {
 }
 ```
 
-## Software licence agreement
+## Software license agreement
 
 Details the license agreement of OntoQL V1: [LICENSE](LICENSE)
 
